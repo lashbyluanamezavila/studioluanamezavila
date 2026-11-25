@@ -37,6 +37,9 @@ header{border-bottom-color:var(--line)}
 </main><footer>LUANA MEZAVILA · EXTENSÃO DE CÍLIOS · <span id="year"></span></footer>
 <script>
 let selected=null;function choose(btn,key){document.querySelectorAll('.opt').forEach(x=>x.classList.remove('selected'));btn.classList.add('selected');selected=key;let text={natural:'Nossa inspiração: um efeito delicado e discreto. Converse comigo sobre o Volume Brasileiro com mapeamento suave.',defined:'Nossa inspiração: um olhar mais definido. Vamos avaliar um desenho que valorize sua expressão.',elongated:'Nossa inspiração: um efeito alongado. Podemos conversar sobre um desenho estilo Fox, conforme a avaliação.',volume:'Nossa inspiração: mais presença e destaque. Vamos conversar sobre o resultado que você deseja e o que é adequado para seus fios.'};let r=document.getElementById('result');r.innerHTML='<strong>Sua inspiração</strong><p>'+text[key]+'</p><a href="#contato" class="btn">CONSULTAR E AGENDAR</a>';r.style.display='block'}
-function openWhatsApp(){alert('O WhatsApp será conectado assim que inserirmos seu número de atendimento.');return false}
+function openWhatsApp(){
+window.open('https://wa.me/5519983188983?text=Olá!%20Gostaria%20de%20agendar%20minha%20extensão%20de%20cílios.','_blank');
+return false;
+}
 document.getElementById('year').textContent=new Date().getFullYear();
 </script></body></html>
